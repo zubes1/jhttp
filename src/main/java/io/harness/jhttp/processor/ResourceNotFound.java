@@ -1,11 +1,11 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
-import io.harness.jhttp.jhttp.api.RequestProcessor;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.RequestProcessor;
 
 /**
  * This processors renders a 404 error if requested file doesn't exist in the server root.

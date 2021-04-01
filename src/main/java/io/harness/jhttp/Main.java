@@ -1,9 +1,9 @@
-package io.harness.jhttp.jhttp;
+package io.harness.jhttp;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import io.harness.jhttp.jhttp.server.HttpServer;
+import io.harness.jhttp.server.HttpServer;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.HelpFormatter;

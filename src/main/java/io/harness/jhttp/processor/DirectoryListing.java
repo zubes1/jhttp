@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -6,9 +6,9 @@ import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
-import io.harness.jhttp.jhttp.api.RequestProcessor;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.RequestProcessor;
 import org.apache.commons.lang3.StringUtils;
 
 /**

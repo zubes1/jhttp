@@ -1,12 +1,12 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import io.harness.jhttp.jhttp.api.HttpResponse;
-import io.harness.jhttp.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.HttpRequest;
 
 /**
  * This class wraps the socket's output stream and allows to send HTTP request status, headers and response

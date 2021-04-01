@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp;
+package io.harness.jhttp;
 
 import java.util.Iterator;
 import java.util.Spliterators;

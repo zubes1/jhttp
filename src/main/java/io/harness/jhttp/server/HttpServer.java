@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import io.harness.jhttp.jhttp.api.RequestProcessor;
-import io.harness.jhttp.jhttp.processor.DirectoryIndex;
-import io.harness.jhttp.jhttp.processor.ResourceNotFound;
-import io.harness.jhttp.jhttp.processor.StaticFile;
+import io.harness.jhttp.api.RequestProcessor;
+import io.harness.jhttp.processor.DirectoryIndex;
+import io.harness.jhttp.processor.ResourceNotFound;
+import io.harness.jhttp.processor.StaticFile;
 import org.apache.commons.io.IOUtils;
 
-import io.harness.jhttp.jhttp.processor.DirectoryListing;
+import io.harness.jhttp.processor.DirectoryListing;
 
 /**
  * This class creates a server socket, registers all processors and for each connection creates a

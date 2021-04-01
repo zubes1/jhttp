@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,8 +8,8 @@ import java.net.Socket;
 import java.nio.file.Path;
 import java.util.List;
 
-import io.harness.jhttp.jhttp.LambdaUtils;
-import io.harness.jhttp.jhttp.api.HttpRequest;
+import io.harness.jhttp.LambdaUtils;
+import io.harness.jhttp.api.HttpRequest;
 import org.apache.commons.lang3.StringUtils;
 
 /**

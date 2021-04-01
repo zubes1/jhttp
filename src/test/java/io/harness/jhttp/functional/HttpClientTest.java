@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.functional;
+package io.harness.jhttp.functional;
 
 import java.io.IOException;
 import java.net.ConnectException;
@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import io.harness.jhttp.jhttp.server.HttpServer;
+import io.harness.jhttp.server.HttpServer;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.ParseException;

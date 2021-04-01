@@ -1,14 +1,14 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
-import io.harness.jhttp.jhttp.api.RequestProcessor;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.RequestProcessor;
 
-import static io.harness.jhttp.jhttp.LambdaUtils.curry;
+import static io.harness.jhttp.LambdaUtils.curry;
 
 /**
  * This processor renders the {@code index.htm[l]} file, if it exists in the requested directory.

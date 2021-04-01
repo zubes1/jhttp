@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,8 +12,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 

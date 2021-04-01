@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.util.List;
 

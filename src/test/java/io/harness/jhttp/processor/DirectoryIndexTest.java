@@ -1,17 +1,17 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import io.harness.jhttp.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.HttpResponse;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpRequest;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;

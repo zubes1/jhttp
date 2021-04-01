@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpRequest;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 

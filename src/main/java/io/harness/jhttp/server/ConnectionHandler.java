@@ -1,13 +1,13 @@
-package io.harness.jhttp.jhttp.server;
+package io.harness.jhttp.server;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.net.Socket;
 import java.util.List;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
-import io.harness.jhttp.jhttp.api.RequestProcessor;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.RequestProcessor;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.processor;
+package io.harness.jhttp.processor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -7,8 +7,8 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import io.harness.jhttp.jhttp.api.HttpRequest;
-import io.harness.jhttp.jhttp.api.HttpResponse;
+import io.harness.jhttp.api.HttpRequest;
+import io.harness.jhttp.api.HttpResponse;
 import org.junit.Before;
 import org.junit.Test;
 

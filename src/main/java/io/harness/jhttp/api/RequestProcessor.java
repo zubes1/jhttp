@@ -1,4 +1,4 @@
-package io.harness.jhttp.jhttp.api;
+package io.harness.jhttp.api;
 
 import java.io.UncheckedIOException;
 
