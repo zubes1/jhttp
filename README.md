@@ -1,6 +1,5 @@
 # JHTTP
 
-## Introduction
 
 JHTTP is a simple HTTP server written in the Java 8.
 
@@ -23,4 +22,8 @@ It creates a self-contained, executable JAR in the `target` directory.
     -p,--port <PORT>            port to listen (default: 8888)
     -r,--root <DIR>             server root directory (default: '.')
     -t,--threads <THREADS_NO>   thread pool size (default: 10)
-
+    
+### Demo
+* [Change background color](src/main/java/io/harness/jhttp/processor/DirectoryListing.java)
+* [Update a test](src/main/java/io/harness/jhttp/server/HeaderList.java)
+* [Update README](README.md)
