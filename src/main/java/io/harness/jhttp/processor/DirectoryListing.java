@@ -23,7 +23,7 @@ public class DirectoryListing implements RequestProcessor {
         if (!Files.isDirectory(directory)) {
             return false;
         }
-        response.setContentType("text/html");
+        response.setContentType("text/html1");
 
         final String uri = StringUtils.removeEnd(request.getUri(), "/");
         final PrintWriter writer = response.getPrintWriter();
