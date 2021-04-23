@@ -57,7 +57,7 @@
     </build>
 
     <dependencies>
-        <!-- tests related  -->
+        <!-- tests related   -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
