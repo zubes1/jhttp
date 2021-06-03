@@ -39,7 +39,7 @@ public class DirectoryListing implements RequestProcessor {
             throw new UncheckedIOException(e);
         }
         return true;
-    }
+    } 
 
     private void appendLink(String fileName, String uri, PrintWriter writer) {
 //        writer.append(String.format("<li>\n<a href=\"%s/%s\">%s</a>\n</li>\n", uri, fileName, fileName));
