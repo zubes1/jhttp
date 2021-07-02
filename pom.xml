@@ -58,6 +58,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.12-SNAPSHOT</version>
+        </dependency>
         <!-- tests related   -->
         <dependency>
             <groupId>junit</groupId>

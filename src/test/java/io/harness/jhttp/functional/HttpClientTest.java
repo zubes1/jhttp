@@ -5,6 +5,7 @@ import java.net.ConnectException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.file.Paths;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -20,6 +21,7 @@ import org.apache.http.util.EntityUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.reflections.Reflections;
 
 import static org.junit.Assert.*;
 
@@ -48,6 +50,14 @@ public class HttpClientTest {
 //    @Test
     public void testDirectoryListing() throws IOException {
         testRequest("/", "/http-server/root.html");
+    }
+
+    @Test
+    public void testReflection() throws IOException {
+        Reflections reflections = new Reflections("com.baeldung.reflections");
+
+        Set<Class<? extends Object>> allClasses =
+                reflections.getSubTypesOf(Object.class);
     }
 
     @Test
