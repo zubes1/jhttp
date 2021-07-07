@@ -52,7 +52,7 @@ public class HttpClientTest {
         testRequest("/", "/http-server/root.html");
     }
 
-    @Test
+//    @Test
     public void testReflection() throws IOException {
         Reflections reflections = new Reflections("com.baeldung.reflections");
 
