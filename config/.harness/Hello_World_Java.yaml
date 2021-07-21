@@ -7,7 +7,7 @@ pipeline:
     properties:
         ci:
             codebase:
-                connectorRef: account.jhttp_repo
+                connectorRef: account.Keen_jhttp
                 build: <+input>
     stages:
         - stage:
