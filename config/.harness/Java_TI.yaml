@@ -1,11 +1,11 @@
 pipeline:
     name: Java TI
-    identifier: Java_TI
+    identifier: Java_TI_Keen
     projectIdentifier: Product_Demos_CIE
     orgIdentifier: default
     tags: {}
     properties:
-        ci:
+        ci: 
             codebase:
                 connectorRef: account.jhttp_repo
                 build: <+input>
