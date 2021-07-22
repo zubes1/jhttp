@@ -44,13 +44,14 @@ pipeline:
                           - step:
                                 type: BuildAndPushDockerRegistry
                                 name: Build and push image to DockerHub
-                                timeout: 2h
+                                timeout: 4h
                                 identifier: Build_and_push_image_to_DockerHub
                                 spec:
                                     connectorRef: account.nofar_dockerhub
                                     repo: bluebbb/javademo
                                     tags:
                                         - <+pipeline.sequenceId>
+                                    optimize: true
                   infrastructure:
                       type: KubernetesDirect
                       spec:
