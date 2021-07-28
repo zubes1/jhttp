@@ -22,6 +22,7 @@ pipeline:
                                 type: RunTests
                                 description: simple desc
                                 name: runTestsWithIntelligence
+                                timeout: 2h
                                 identifier: runTestsWithIntelligence
                                 spec:
                                     connectorRef: account.nofar_dockerhub
