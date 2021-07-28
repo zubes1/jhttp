@@ -19,6 +19,15 @@ pipeline:
                   execution:
                       steps:
                           - step:
+                                type: Run
+                                name: fail buils
+                                identifier: fail_buils
+                                spec:
+                                    connectorRef: account.nofar_dockerhub
+                                    image: alpine
+                                    command: mvn 348792734
+                                    privileged: false
+                          - step:
                                 type: RunTests
                                 timeout: 5h
                                 description: simple desc
