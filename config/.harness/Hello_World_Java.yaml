@@ -20,7 +20,7 @@ pipeline:
                       steps:
                           - step:
                                 type: RunTests
-                                timeout: 5h
+                                timeout: 60m
                                 description: simple desc
                                 name: runTestsWithIntelligence
                                 identifier: runTestsWithIntelligence
