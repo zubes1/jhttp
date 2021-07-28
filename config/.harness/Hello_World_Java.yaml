@@ -20,7 +20,6 @@ pipeline:
                       steps:
                           - step:
                                 type: RunTests
-                                timeout: 60m
                                 description: simple desc
                                 name: runTestsWithIntelligence
                                 identifier: runTestsWithIntelligence
@@ -32,6 +31,7 @@ pipeline:
                                     language: java
                                     packages: io.harness.
                                     runOnlySelectedTests: true
+                                    postCommand: mvn package -DskipTests
                                     reports:
                                         type: JUnit
                                         spec:
@@ -40,7 +40,6 @@ pipeline:
                                     resources:
                                         limits:
                                             memory: 1000Mi
-                                    postCommand: mvn package -DskipTests
                           - step:
                                 type: BuildAndPushDockerRegistry
                                 name: Build and push image to DockerHub
