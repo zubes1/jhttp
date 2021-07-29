@@ -13,6 +13,7 @@ pipeline:
         - stage:
               name: Build Test and Push
               identifier: Test_Build_and_Push
+              description: hello world java demo
               type: CI
               spec:
                   cloneCodebase: true
