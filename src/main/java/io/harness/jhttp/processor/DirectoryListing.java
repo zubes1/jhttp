@@ -48,4 +48,4 @@ public class DirectoryListing implements RequestProcessor {
 //        writer.append(String.format("<li style='list-style-type:circle; padding:4px; background:yellow;'>\n<a href=\"%s/%s\">%s</a>\n</li>\n", uri, fileName, fileName));
 
     }
-}
+} 
