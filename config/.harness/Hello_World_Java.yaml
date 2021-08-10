@@ -27,7 +27,7 @@ pipeline:
                                     connectorRef: account.nofar_dockerhub
                                     image: maven:3.5.2-jdk-8-alpine
                                     args: test
-                                    buildTool: Bazel
+                                    buildTool: Maven
                                     language: Java
                                     packages: io.harness.
                                     runOnlySelectedTests: true
