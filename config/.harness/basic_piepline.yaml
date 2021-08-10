@@ -16,7 +16,7 @@ pipeline:
                       type: KubernetesDirect
                       spec:
                           connectorRef: account.k8scluster
-                          namespace: aaa
+                          namespace: harness-delegate-pmdemo
                   execution:
                       steps:
                           - step:
