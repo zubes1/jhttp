@@ -31,6 +31,7 @@ pipeline:
                                     language: Java
                                     packages: io.harness.
                                     runOnlySelectedTests: true
+                                    postCommand: mvn package -DskipTests
                                     reports:
                                         type: JUnit
                                         spec:
