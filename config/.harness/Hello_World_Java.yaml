@@ -21,6 +21,7 @@ pipeline:
                       steps:
                           - step:
                                 type: RunTests
+                                description: test123
                                 name: runTestsWithIntelligence
                                 identifier: runTestsWithIntelligence
                                 spec:
