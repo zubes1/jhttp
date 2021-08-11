@@ -103,6 +103,42 @@ public class HttpClientTest {
     }
     
     @Test
+    public void testStaticFile6341() throws IOException, InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
+    public void testStaticFile6141() throws IOException, InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
+    public void testStaticFile6121() throws IOException, InterruptedException {
+        Thread.sleep(12000); 
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
+    public void testStaticFile61212() throws IOException, InterruptedException {
+        Thread.sleep(9000); 
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    
+    @Test
+    public void testStaticFile61272() throws IOException, InterruptedException {
+        Thread.sleep(21000); 
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
     public void test404() throws IOException {
         testRequest("/invalid-file.html", "/http-server/404.html", 404);
     }
