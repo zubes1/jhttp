@@ -9,6 +9,8 @@ pipeline:
             codebase:
                 connectorRef: account.Keen_jhttp
                 build: <+input>
+                sslVerify: false
+                prCloneStrategy: MergeCommit
     stages:
         - stage:
               name: Build Test and Push
