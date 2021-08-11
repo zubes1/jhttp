@@ -80,7 +80,7 @@ pipeline:
                                     connectorRef: account.nofar_dockerhub
                                     image: curlimages/curl:7.69.1
                                     command: |-
-                                        sleep 7
+                                        sleep 5
                                         curl localhost:8888
                                     privileged: false
                   serviceDependencies:
