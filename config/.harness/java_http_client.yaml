@@ -24,6 +24,7 @@ pipeline:
                           - step:
                                 type: RunTests
                                 description: test123
+                                timeout: 20m
                                 name: runTestsWithIntelligence
                                 identifier: runTestsWithIntelligence
                                 spec:
