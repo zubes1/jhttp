@@ -61,16 +61,47 @@ public class HttpClientTest {
     }
 
     @Test
-    public void testDirectoryIndex() throws IOException {
+    public void testDirectoryIndex() throws IOException, InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
         testRequest("/directory1", "/http-server/server-root/directory1/index.html");
     }
 
     @Test
-    public void testStaticFile() throws IOException {
+    public void testStaticFile() throws IOException , InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
         testRequest("/file1.html", "/http-server/server-root/file1.html");
         testRequest("/file2.html", "/http-server/server-root/file2.html");
     }
 
+    @Test
+    public void testStaticFile123() throws IOException , InterruptedException{
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
+    public void testStaticFile1234() throws IOException , InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+    @Test
+    public void testStaticFile2234() throws IOException , InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
+        
+    @Test
+    public void testStaticFile2341() throws IOException, InterruptedException {
+        Thread.sleep(10000); // sleep 10 sec
+        testRequest("/file1.html", "/http-server/server-root/file1.html");
+        testRequest("/file2.html", "/http-server/server-root/file2.html");
+    }
+    
     @Test
     public void test404() throws IOException {
         testRequest("/invalid-file.html", "/http-server/404.html", 404);
