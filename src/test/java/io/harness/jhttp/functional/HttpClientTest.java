@@ -68,7 +68,7 @@ public class HttpClientTest {
 
     @Test
     public void testStaticFile() throws IOException , InterruptedException {
-        Thread.sleep(10000); // sleep 10 sec
+        Thread.sleep(20000); // sleep 20 sec
         testRequest("/file1.html", "/http-server/server-root/file1.html");
         testRequest("/file2.html", "/http-server/server-root/file2.html");
     }
@@ -89,7 +89,7 @@ public class HttpClientTest {
     
     @Test
     public void testStaticFile2234() throws IOException , InterruptedException {
-        Thread.sleep(10000); // sleep 10 sec
+        Thread.sleep(16000); // sleep 16 sec
         testRequest("/file1.html", "/http-server/server-root/file1.html");
         testRequest("/file2.html", "/http-server/server-root/file2.html");
     }
