@@ -1,5 +1,5 @@
 pipeline:
-    name: Hello World Java
+    name: HTTP Client
     identifier: Hello_World_Java
     projectIdentifier: Product_Demos_CIE
     orgIdentifier: default
