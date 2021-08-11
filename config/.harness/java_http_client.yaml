@@ -1,5 +1,5 @@
 pipeline:
-    name: Java HTTP Client
+    name: Java HTTP Server
     identifier: java_http_client
     projectIdentifier: Product_Demos_CIE
     orgIdentifier: default
