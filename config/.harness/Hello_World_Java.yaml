@@ -21,28 +21,40 @@ pipeline:
                   cloneCodebase: true
                   execution:
                       steps:
-                          - step:
-                                type: RunTests
-                                description: test123
-                                name: runTestsWithIntelligence
-                                identifier: runTestsWithIntelligence
-                                spec:
-                                    connectorRef: account.nofar_dockerhub
-                                    image: maven:3.5.2-jdk-8-alpine
-                                    args: test
-                                    buildTool: Maven
-                                    language: Java
-                                    packages: io.harness.
-                                    runOnlySelectedTests: true
-                                    postCommand: mvn package -DskipTests
-                                    reports:
-                                        type: JUnit
-                                        spec:
-                                            paths:
-                                                - "**/*.xml"
-                                    resources:
-                                        limits:
-                                            memory: 1000Mi
+                          - parallel:
+                                - step:
+                                      type: RunTests
+                                      description: test123
+                                      name: runTestsWithIntelligence
+                                      identifier: runTestsWithIntelligence
+                                      spec:
+                                          connectorRef: account.nofar_dockerhub
+                                          image: maven:3.5.2-jdk-8-alpine
+                                          args: test
+                                          buildTool: Maven
+                                          language: Java
+                                          packages: io.harness.
+                                          runOnlySelectedTests: true
+                                          postCommand: mvn package -DskipTests
+                                          reports:
+                                              type: JUnit
+                                              spec:
+                                                  paths:
+                                                      - "**/*.xml"
+                                          resources:
+                                              limits:
+                                                  memory: 1000Mi
+                                - step:
+                                      type: Run
+                                      name: run tests no TI
+                                      identifier: run_tests_no_TI
+                                      spec:
+                                          connectorRef: account.nofar_dockerhub
+                                          image: maven:3.5.2-jdk-8-alpine
+                                          command: |-
+                                              mvn test
+                                              mvn package -DskipTests
+                                          privileged: false
                           - step:
                                 type: BuildAndPushDockerRegistry
                                 name: Build and push image to DockerHub
