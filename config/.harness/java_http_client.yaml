@@ -8,6 +8,7 @@ pipeline:
         ci:
             codebase:
                 connectorRef: account.Keen_jhttp
+                repoName: jhttp
                 build: <+input>
                 sslVerify: false
                 prCloneStrategy: MergeCommit
