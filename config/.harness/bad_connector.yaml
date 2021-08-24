@@ -1,0 +1,18 @@
+connector:
+  name: bad connector
+  identifier: bad_connector
+  description:
+  orgIdentifier: default
+  projectIdentifier: Product_Demos_CIE
+  type: Github
+  spec:
+    url: http://skdfjhskdjfh.com
+    validationRepo: yada
+    authentication:
+      type: Http
+      spec:
+        type: UsernamePassword
+        spec:
+          username: werwe
+          passwordRef: account.Nofar_bitbucket_cloud
+    type: Account
