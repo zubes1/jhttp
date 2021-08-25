@@ -8,10 +8,9 @@ pipeline:
         - stage:
               name: s1
               identifier: s1
-              description: ""
               type: CI
               spec:
-                  cloneCodebase: false
+                  cloneCodebase: true
                   infrastructure:
                       type: KubernetesDirect
                       spec:
@@ -29,7 +28,6 @@ pipeline:
                                     command: asd
                                     privileged: false
                                 description: qw
-              variables: []
     properties:
         ci:
             codebase:
