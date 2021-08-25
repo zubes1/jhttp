@@ -1,0 +1,32 @@
+pipeline:
+    name: sample2132
+    identifier: sample2132
+    projectIdentifier: Product_Demos_CIE
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: s1
+              identifier: s1
+              description: ""
+              type: CI
+              spec:
+                  cloneCodebase: false
+                  infrastructure:
+                      type: KubernetesDirect
+                      spec:
+                          connectorRef: account.k8scluster
+                          namespace: sdasd
+                  execution:
+                      steps:
+                          - step:
+                                type: Run
+                                name: qweq
+                                identifier: qweq
+                                spec:
+                                    connectorRef: account.nofar_dockerhub
+                                    image: asdas
+                                    command: asd
+                                    privileged: false
+                                description: qw
+              variables: []
