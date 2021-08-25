@@ -30,3 +30,9 @@ pipeline:
                                     privileged: false
                                 description: qw
               variables: []
+    properties:
+        ci:
+            codebase:
+                connectorRef: account.Keen_jhttp
+                repoName: dfsdf
+                build: <+input>
