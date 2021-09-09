@@ -27,6 +27,7 @@ pipeline:
                                 description: run unit tests
                                 name: runTestsWithIntelligence
                                 identifier: runTestsWithIntelligence
+                                timeout: 20m
                                 spec:
                                     connectorRef: account.nofar_dockerhub
                                     image: maven:3.5.2-jdk-8-alpine
