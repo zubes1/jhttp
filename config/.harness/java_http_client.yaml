@@ -26,7 +26,6 @@ pipeline:
                                 type: RunTests
                                 description: run unit tests
                                 name: runTestsWithIntelligence
-                                timeout: 20m
                                 identifier: runTestsWithIntelligence
                                 spec:
                                     connectorRef: account.nofar_dockerhub
@@ -55,7 +54,6 @@ pipeline:
                                     tags:
                                         - <+pipeline.sequenceId>
                                     optimize: true
-                                timeout: 5h
                   infrastructure:
                       type: KubernetesDirect
                       spec:
