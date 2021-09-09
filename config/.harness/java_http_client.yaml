@@ -55,6 +55,7 @@ pipeline:
                                     tags:
                                         - <+pipeline.sequenceId>
                                     optimize: true
+                                timeout: 5h
                   infrastructure:
                       type: KubernetesDirect
                       spec:
