@@ -6,7 +6,7 @@ connector:
   projectIdentifier: Product_Demos_CIE
   type: Github
   spec:
-    url: https://github.com/nofarb
+    url: https://github.com/nofarb/whatever
     validationRepo: HelloTemplates
     authentication:
       type: Http
@@ -19,4 +19,4 @@ connector:
       type: Token
       spec:
         tokenRef: account.nofar_github_token
-    type: Account
+    type: Repo
