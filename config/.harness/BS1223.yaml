@@ -1,5 +1,5 @@
 connector:
-  name: BS1223
+  name: org git connector keen
   identifier: BS1223
   description:
   orgIdentifier: default
