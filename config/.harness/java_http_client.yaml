@@ -85,6 +85,7 @@ pipeline:
                                         sleep 5
                                         curl localhost:8888
                                     privileged: false
+                                timeout: 30m
                   serviceDependencies:
                       - identifier: runhelloworldserver
                         name: Run Hello World Server
