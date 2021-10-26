@@ -55,6 +55,16 @@ pipeline:
                                     tags:
                                         - <+pipeline.sequenceId>
                                     optimize: true
+                          - step:
+                                type: Run
+                                name: "show programming language "
+                                identifier: show_programming_language
+                                spec:
+                                    connectorRef: account.nofar_dockerhub
+                                    image: alpine
+                                    command: aaaaa
+                                    privileged: false
+                                description: <+input>
                   infrastructure:
                       type: KubernetesDirect
                       spec:
