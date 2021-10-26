@@ -64,7 +64,6 @@ pipeline:
                                     image: alpine
                                     command: aaaaa
                                     privileged: false
-                                description: <+input>
                   infrastructure:
                       type: KubernetesDirect
                       spec:
@@ -72,10 +71,7 @@ pipeline:
                           namespace: harness-delegate-pmdemo
                   sharedPaths:
                       - ""
-              variables:
-                  - name: myStageVar
-                    type: String
-                    value: stageVarValue
+              variables: []
         - stage:
               name: Run Integration Test
               identifier: Run_Integration_Test
@@ -112,4 +108,4 @@ pipeline:
     variables:
         - name: pipelineVar
           type: String
-          value: pipelineVarValue
+          value: <+input>
