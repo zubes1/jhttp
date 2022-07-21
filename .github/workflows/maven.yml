@@ -24,3 +24,14 @@ jobs:
         cache: maven
     - name: Build with Maven1
       run: mvn -B package --file pom.xml
+  second_job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: echo
+      run: echo "hello"
+
+
+
+
