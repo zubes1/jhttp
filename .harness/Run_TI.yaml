@@ -1,5 +1,5 @@
 pipeline:
-  name: Run TI
+  name: Run Only TI
   identifier: Run_TI
   projectIdentifier: CI_Demos_new_gitX
   orgIdentifier: default
