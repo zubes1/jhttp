@@ -1,0 +1,14 @@
+inputSet:
+  identifier: "IS1"
+  name: "IS1"
+  orgIdentifier: "default"
+  projectIdentifier: "CI_Demos_new_gitX"
+  pipeline:
+    identifier: "Run_TI"
+    properties:
+      ci:
+        codebase:
+          build:
+            type: "PR"
+            spec:
+              number: "<+trigger.prNumber>"
