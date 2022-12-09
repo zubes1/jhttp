@@ -3,4 +3,5 @@ config:
     - "README.md"
     - ".ticonfig.yaml"
     - "**/*.go"
+    - "**/*.md"
     - "**/Dockerfile*"
