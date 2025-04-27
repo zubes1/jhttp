@@ -95,7 +95,6 @@ public class HttpClientTest {
         fail("HTTP server hasn't started");
         return 0;
     }
-    
     @Test
     public void testRootEndpoint() throws IOException {
         final HttpResponse response = getResponse("/");
