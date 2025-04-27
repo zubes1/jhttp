@@ -47,7 +47,7 @@ public class HttpClientTest {
         server.stop();
     }
 
-//    @Test
+//   @Test
     public void testDirectoryListing() throws IOException {
         testRequest("/", "/http-server/root.html");
     }
@@ -95,5 +95,10 @@ public class HttpClientTest {
         fail("HTTP server hasn't started");
         return 0;
     }
-
+    
+    @Test
+    public void testRootEndpoint() throws IOException {
+        final HttpResponse response = getResponse("/");
+        assertEquals(200, response.getStatusLine().getStatusCode());
+    }
 }
